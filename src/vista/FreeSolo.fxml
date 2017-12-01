@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
 
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="control.ControlFX">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="502.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ImageView fitHeight="413.0" fitWidth="498.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/escalada.jpg" />
+               </image>
+            </ImageView>
+         </center>
+         <bottom>
+            <Pane prefHeight="57.0" prefWidth="502.0" style="-fx-background-color: #f5b811;" BorderPane.alignment="CENTER">
+               <effect>
+                  <SepiaTone />
+               </effect>
+               <children>
+                  <JFXButton layoutX="355.0" layoutY="16.0" onAction="#cerrar" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: BLACK;" styleClass="fuente2" stylesheets="@../control/application.css" text="CERRAR" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

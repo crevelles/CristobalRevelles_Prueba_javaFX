@@ -34,6 +34,13 @@ public class ControlFX {
 	            e.printStackTrace();
 	        }
 	    }
+	
+	
+	@FXML
+    private void cerrar() {
+   	    System.exit(0);
+   	    
+    }
 	 
 	 
 	
