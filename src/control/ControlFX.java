@@ -17,6 +17,11 @@ public class ControlFX {
 	private Button abrirVentana;
 	
 	
+	
+	/**
+	 * Este método abre la segunda ventana
+	 */
+	
 	@FXML
 	 public void abrirVentana() {
 	        try {
@@ -36,6 +41,9 @@ public class ControlFX {
 	    }
 	
 	
+	/**
+	 * Este método cierra la aplicación
+	 */
 	@FXML
     private void cerrar() {
    	    System.exit(0);

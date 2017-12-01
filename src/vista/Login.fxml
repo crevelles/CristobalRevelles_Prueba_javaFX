@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../control/application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="control.ControlFX">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../control/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControlFX">
    <children>
       <BorderPane prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
@@ -46,7 +45,7 @@
                                     <Insets />
                                  </HBox.margin>
                               </JFXButton>
-                              <JFXButton prefHeight="25.0" prefWidth="99.0" style="-fx-border-color: white; -fx-border-radius: 10px;" text="SIGNIN" textFill="WHITE">
+                              <JFXButton prefHeight="25.0" prefWidth="99.0" style="-fx-border-color: white; -fx-border-radius: 5px;" text="SIGNIN" textFill="WHITE">
                                  <opaqueInsets>
                                     <Insets />
                                  </opaqueInsets>
@@ -77,16 +76,16 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <JFXTextField promptText="LAST NAME" GridPane.rowIndex="1" />
-                              <JFXTextField promptText="FIRST NAME" />
-                              <JFXTextField promptText="EMAIL" GridPane.rowIndex="2" />
-                              <JFXPasswordField text="PASSWORD" GridPane.rowIndex="3" />
-                              <JFXPasswordField text="REPEAT PASSWORD" GridPane.rowIndex="4" />
+                              <JFXTextField focusColor="#ff4081" promptText="LAST NAME" GridPane.rowIndex="1" />
+                              <JFXTextField focusColor="#ff4081" promptText="FIRST NAME" />
+                              <JFXTextField focusColor="#ff4081" promptText="EMAIL" GridPane.rowIndex="2" />
+                              <JFXPasswordField focusColor="#ff4081" promptText="PASSWORD" GridPane.rowIndex="3" />
+                              <JFXPasswordField focusColor="#ff4081" promptText="REPEAT PASSWORD" GridPane.rowIndex="4" />
                            </children>
                         </GridPane>
                         <HBox layoutX="56.0" layoutY="506.0" prefHeight="36.0" prefWidth="235.0">
                            <children>
-                              <JFXToggleButton text="UNDER 18 ?" />
+                              <JFXToggleButton text="UNDER 18 ?" toggleColor="#ff4081" toggleLineColor="#eb87aa" />
                               <JFXButton alignment="CENTER" onAction="#abrirVentana" opacity="0.76" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: WHITE;" text="GET STARTED">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
@@ -95,7 +94,7 @@
                                     <Insets />
                                  </opaqueInsets>
                                  <HBox.margin>
-                                    <Insets top="10.0" />
+                                    <Insets top="15.0" />
                                  </HBox.margin>
                               </JFXButton>
                            </children>
