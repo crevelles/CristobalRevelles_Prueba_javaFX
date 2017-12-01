@@ -10,6 +10,16 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+
+
+
+/**
+ * Clase que controla la lógica de la APP.
+ * @author Cristóbal Revelles
+ * @version 1.0
+ * @since Diciembre 2017
+ */
+
 public class ControlFX {
 	
 	
@@ -18,10 +28,8 @@ public class ControlFX {
 	
 	
 	
-	/**
-	 * Este método abre la segunda ventana
-	 */
 	
+	/** Este método abre la segunda ventana*/
 	@FXML
 	 public void abrirVentana() {
 	        try {

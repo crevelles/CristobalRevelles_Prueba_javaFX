@@ -32,7 +32,7 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-	
+	/* Método que arranca la app */
 	public static void main(String[] args) {
 		launch(args);
 	}

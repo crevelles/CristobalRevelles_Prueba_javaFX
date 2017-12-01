@@ -64,7 +64,7 @@
                   </ImageView>
                   <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D7ccc8;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <children>
-                        <GridPane layoutX="56.0" layoutY="140.0" prefHeight="278.0" prefWidth="231.0">
+                        <GridPane layoutX="56.0" layoutY="195.0" prefHeight="280.0" prefWidth="231.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
@@ -76,17 +76,17 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <JFXTextField focusColor="#ff4081" promptText="LAST NAME" GridPane.rowIndex="1" />
-                              <JFXTextField focusColor="#ff4081" promptText="FIRST NAME" />
-                              <JFXTextField focusColor="#ff4081" promptText="EMAIL" GridPane.rowIndex="2" />
-                              <JFXPasswordField focusColor="#ff4081" promptText="PASSWORD" GridPane.rowIndex="3" />
-                              <JFXPasswordField focusColor="#ff4081" promptText="REPEAT PASSWORD" GridPane.rowIndex="4" />
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" promptText="LAST NAME" GridPane.rowIndex="1" />
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" promptText="FIRST NAME" />
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" promptText="EMAIL" GridPane.rowIndex="2" />
+                              <JFXPasswordField focusColor="#ff4081" labelFloat="true" promptText="PASSWORD" GridPane.rowIndex="3" />
+                              <JFXPasswordField focusColor="#ff4081" labelFloat="true" promptText="REPEAT PASSWORD" GridPane.rowIndex="4" />
                            </children>
                         </GridPane>
                         <HBox layoutX="56.0" layoutY="506.0" prefHeight="36.0" prefWidth="235.0">
                            <children>
-                              <JFXToggleButton text="UNDER 18 ?" toggleColor="#ff4081" toggleLineColor="#eb87aa" />
-                              <JFXButton alignment="CENTER" onAction="#abrirVentana" opacity="0.76" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: WHITE;" text="GET STARTED">
+                              <JFXToggleButton styleClass="fuentePeque" stylesheets="@../control/application.css" text="UNDER 18 ?" toggleColor="#ff4081" toggleLineColor="#eb87aa" />
+                              <JFXButton alignment="CENTER" onAction="#abrirVentana" opacity="0.76" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: WHITE; -fx-border-radius: 5px;" styleClass="fuentePeque" stylesheets="@../control/application.css" text="GET STARTED">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
@@ -99,6 +99,11 @@
                               </JFXButton>
                            </children>
                         </HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="64.0" prefHeight="81.0" prefWidth="108.0" style="-fx-background-color: white; -fx-background-radius: 100;" styleClass="labelM" stylesheets="@../control/application.css" text="M" textAlignment="CENTER" textFill="#ff7777">
+                           <font>
+                              <Font size="76.0" />
+                           </font>
+                        </Label>
                      </children>
                   </Pane>
                </children>
